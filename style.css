@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Write CSS code below */
+
+body{
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-content{
+    width: 90%;
+    min-height: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+    justify-content: center;
+}
+.left-section{
+    grid-column: 300px;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+.right-section{
+    grid-column: 300px 1000px;
+    background-color: rgb(16, 67, 61);
+    color: white;
+}
+
+.profile-image{
+    padding: 1rem;
+    display: block;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+.profile-image img{
+    height: 100%;
+    width: 60%;
+    border: 5px solid white;
+    border-radius: 30%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.line-after{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.line{
+    height: 1px;
+    width: 80%;
+    background-color: rgb(7, 125, 112);
+    border: 1px solid rgb(7, 125, 112);
+    display: block;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.contact-item .icon{
+    text-align: center;
+    margin-left: 1.5rem;
+    padding: 0.75rem;
+}
+.contact-item .icon a{
+    color:rgb(7, 125, 112);
+}
+.contact-item ul{
+    margin-top: 0.5rem;
+}
+.contact-item ul li{
+    position: relative;
+    list-style: none;
+    padding: 0.2rem;
+}
+.contact-item ul li .icon{
+    color: rgb(7, 125, 112);
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    margin-left: 0.5rem;
+}
+
+.sills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-section ul li{
+    list-style: none;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    display: block;
+}
+.progress-bar div{
+    height: 100%;
+    background-color: rgb(7, 125, 112);
+}
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-main-content .right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.right-main-content p{
+    padding: 0.5rem;
+    padding-bottom: 15px;
+}
+.education{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.education h4{
+    padding: 0.5rem;
+}
+.experience{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.experience h4{
+    padding: 0.5rem;
+}
+.text{
+    width: 85%;
+}
+.year{
+    width: 15%;
+    text-align: right;
+}
+
+@media only screen and (max-width: 673px){
+    .main-content{
+        width: 90%;
+        min-height: 1000px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
