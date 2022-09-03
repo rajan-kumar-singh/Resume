@@ -9,29 +9,32 @@
 /* Write CSS code below */
 
 body{
-    width: 100%;
-    background-color: grey;
+    background-color: rgb(110, 104, 104);
     display: flex;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
 }
 
 .main-content{
-    width: 90%;
-    min-height: 1000px;
-    margin: 20px auto;
+    position: relative;
     display: grid;
     grid-template-columns: 300px 700px;
+    width: 90%;
+    max-width: 674px;
+    min-height: 1000px;
+    margin: 50px;
+    margin-left: -20px;
     justify-content: center;
 }
 .left-section{
-    grid-column: 300px;
-    position: relative;
+    grid-column: span 1;
     background-color: black;
     color: white;
 }
 .right-section{
-    grid-column: 300px 1000px;
+    grid-column: span 1 / span 2;
+    position: relative;
     background-color: rgb(16, 67, 61);
     color: white;
 }
@@ -40,12 +43,11 @@ body{
     padding: 1rem;
     display: block;
     margin: auto;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     text-align: center;
 }
 .profile-image img{
-    height: 100%;
     width: 60%;
     border: 5px solid white;
     border-radius: 30%;
@@ -105,7 +107,7 @@ body{
     margin-left: 0.5rem;
 }
 
-.sills{
+.skills{
     font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase;
@@ -125,6 +127,7 @@ body{
     border: 1px solid white;
     height: 4px;
     display: block;
+    margin: 5px;
 }
 .progress-bar div{
     height: 100%;
