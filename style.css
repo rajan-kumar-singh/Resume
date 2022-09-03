@@ -28,7 +28,7 @@ body{
     justify-content: center;
 }
 .left-section{
-    grid-column: span1;
+    grid-column: span 1;
     position: relative;
     background-color: black;
     color: white;
