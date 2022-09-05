@@ -174,8 +174,8 @@ body{
     text-align: right;
 }
 
-@media only screen and (max-width: 674px){
-    .main-content{
+@media only screen and (max-width: 673px) {
+    .main-content {
         width: 90%;
         min-height: 1000px;
         grid-template-columns: repeat(1, 1fr);
